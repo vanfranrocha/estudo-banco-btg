@@ -1911,7 +1911,7 @@ video {
   }
 
   .investments-header h2 {
-    font-size: clamp(38px, 10vw, 48px);
+    font-size: clamp(32px, 10vw, 32px);
   }
 
   .app-download-card {
@@ -1930,7 +1930,7 @@ video {
   }
 
   .investment-card h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .investment-card p {
@@ -1959,7 +1959,7 @@ video {
 
   .tabs {
     width: 100%;
-    margin-top: 18px;
+    margin-top: 8px;
     transform: none;
   }
 
@@ -1969,16 +1969,20 @@ video {
   }
 
   .stage-main {
-    min-height: 450px;
+    min-height: 390px;
+    margin-top: 0;
   }
 
   .card-wrap {
+    width: 360px;
+    height: 270px;
     transform: scale(.72);
   }
 
   .card-image {
     left: 50%;
-    top: 70px;
+    top: 60px;
+    width: 330px;
     transform: translateX(-50%) rotate(-9deg) rotateY(-9deg);
   }
 
@@ -2007,16 +2011,30 @@ video {
   }
 
   .big-word {
-    top: 88px;
-    font-size: 86px;
+    top: 54px;
+    font-size: 62px;
   }
 
   .copy {
-    top: 58px;
+    top: 18px;
   }
 
   .copy h3 {
     font-size: 24px;
+  }
+
+  .copy p {
+    max-width: 310px;
+    font-size: 12px;
+  }
+
+  .cards-heading {
+    margin-bottom: 18px;
+  }
+
+  .cards-heading h2 {
+    font-size: 34px;
+    line-height: 1.18;
   }
 
   .benefits {
@@ -2251,7 +2269,7 @@ video {
   }
 
   .complete-bank-copy h2 {
-    font-size: clamp(32px, 10vw, 40px);
+    font-size: clamp(32px, 10vw, 32px);
   }
 
   .investments-header {
@@ -2282,12 +2300,12 @@ video {
   }
 
   .cards-heading {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
 
   .cards-heading h2 {
-    font-size: clamp(34px, 10vw, 42px);
-    line-height: 1.12;
+    font-size: 34px;
+    line-height: 1.18;
   }
 
   .cards-heading-avatar {
@@ -2299,6 +2317,7 @@ video {
   .tabs {
     gap: 2px;
     padding: 6px;
+    margin-top: 8px;
   }
 
   .tab {
@@ -2313,16 +2332,63 @@ video {
   }
 
   .stage-main {
-    margin-top: 26px;
+    min-height: 390px;
+    margin-top: 0;
   }
 
   .big-word {
-    top: 108px;
-    font-size: 68px;
+    top: 54px;
+    font-size: 62px;
   }
 
   .copy {
-    top: 74px;
+    top: 18px;
+  }
+
+  .copy h3 {
+    font-size: 24px;
+  }
+
+  .copy p {
+    max-width: 310px;
+    font-size: 12px;
+  }
+
+  .card-wrap {
+    width: 360px;
+    height: 270px;
+    transform: scale(.72);
+  }
+
+  .card-image {
+    left: 50%;
+    top: 60px;
+    width: 330px;
+    transform: translateX(-50%) rotate(-9deg) rotateY(-9deg);
+  }
+
+  .scene-black .card-image {
+    transform: translateX(-50%) rotate(-7deg) rotateY(-7deg);
+  }
+
+  .scene-black.state-active .card-image {
+    transform: translateX(-50%) rotate(-5deg) rotateY(-5deg) scale(1.04);
+  }
+
+  .scene-ultrablue .card-image {
+    transform: translateX(-50%) rotate(-7deg) rotateY(-7deg);
+  }
+
+  .scene-ultrablue.state-active .card-image {
+    transform: translateX(-50%) rotate(-4deg) rotateY(-4deg) scale(1.06);
+  }
+
+  .scene-tap .card-image {
+    transform: translateX(-50%) rotate(4deg) rotateY(6deg);
+  }
+
+  .scene-tap.state-active .card-image {
+    transform: translateX(-50%) rotate(6deg) rotateY(6deg) scale(1.02);
   }
 
   .site-footer {
