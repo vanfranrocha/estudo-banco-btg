@@ -2186,13 +2186,48 @@ video {
     bottom: -78px;
   }
 
-  .find-grid,
+  .find-section {
+    overflow: hidden;
+  }
+
+  .find-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 24px;
+    margin-right: calc(var(--container-gutter) * -1);
+    padding: 0 var(--container-gutter) 10px 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-padding-left: 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .find-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .find-grid {
+    scrollbar-width: none;
+  }
+
+  .find-grid .find-card {
+    flex: 0 0 min(454px, 82vw);
+    scroll-snap-align: start;
+  }
+
   .investment-grid {
     grid-template-columns: 1fr;
   }
 
   .find-card {
-    min-height: 440px;
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .find-card-media {
+    height: 278px;
+    margin-top: 18px;
   }
 
   .complete-bank {
